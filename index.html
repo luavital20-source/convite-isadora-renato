@@ -58,11 +58,10 @@
   #leaves{position:absolute;inset:0;z-index:1;pointer-events:none;}
   .leaf-fall{position:absolute;opacity:0;animation:fall linear infinite;}
   .splash-inner{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;}
-  .splash-mono{--mc:var(--mono);width:124px;opacity:0;position:relative;animation:fadeUp 1s .2s forwards;}
   .splash-names{
     font-family:'Bodoni Moda',serif;font-weight:400;
     font-size:clamp(40px,12vw,70px);line-height:.96;color:var(--ink);
-    text-align:center;margin-top:26px;letter-spacing:.01em;
+    text-align:center;letter-spacing:.01em;
     opacity:0;animation:fadeUp 1s .55s forwards;
   }
   .splash-names .amp{font-style:italic;color:var(--blue);font-weight:400;display:block;font-size:.5em;margin:.06em 0;}
@@ -269,7 +268,6 @@
   <span class="acc bg-euc" style="width:148px;height:264px;top:-34px;left:-46px;transform:rotate(158deg);opacity:.72;z-index:1"></span>
   <span class="acc bg-leaf" style="width:172px;height:274px;bottom:-36px;right:-44px;transform:rotate(6deg);opacity:.72;z-index:1"></span>
   <div class="splash-inner">
-    <span class="mono splash-mono"></span>
     <h1 class="splash-names" id="splashNames"></h1>
     <p class="splash-date" id="splashDate"></p>
   </div>
